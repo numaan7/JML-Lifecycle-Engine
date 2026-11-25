@@ -1,0 +1,29 @@
+{
+  "pipeline": "Automated-JML-RBAC-Engine",
+  "tenantDomain": "limra.co.in",
+  "executedAtUTC": "2026-11-25T17:19:28.885099+00:00",
+  "events": [
+    {
+      "stage": "JOINER",
+      "timestampUTC": "2026-11-25T17:19:29.267284+00:00",
+      "upn": "jml.hire.8bafc8@limra.co.in",
+      "userId": "1d92f56d-e81c-43a9-b7a1-b68217df6afc",
+      "action": "Created Entra ID user with usageLocation=IN, department=Finance"
+    },
+    {
+      "stage": "MOVER",
+      "timestampUTC": "2026-11-25T17:19:44.635700+00:00",
+      "upn": "jml.hire.8bafc8@limra.co.in",
+      "action": "Updated department to IAM; granted 30-day PIM Eligible User Administrator role",
+      "pimRequestId": "580b8e50-eeda-4657-8fc4-2159068fd713",
+      "pimStatus": "Provisioned"
+    },
+    {
+      "stage": "LEAVER",
+      "timestampUTC": "2026-11-25T17:19:53.334536+00:00",
+      "upn": "jml.hire.8bafc8@limra.co.in",
+      "action": "Removed PIM eligibility, disabled account, revoked active refresh tokens (revokeSignInSessions)",
+      "pimRevokeStatus": "Revoked"
+    }
+  ]
+}
